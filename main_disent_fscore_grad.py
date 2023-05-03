@@ -24,14 +24,12 @@ import pickle
 from pdb import set_trace as bp
 import warnings
 warnings.filterwarnings('ignore')
+from exp_run import config_disent_raw_grad as config
 
 # raw-audio+cnn-lstm
 #from exp_run.models_pytorch import CustomRaw3 as CustomRaw
-#from exp_run import config_cnn_lstm_disent_raw_grad as config
-
 # raw-audio+ECAPA-TDNN
 from exp_run.ETDNN_disent import ECAPA_TDNN_small_raw as CustomRaw
-from exp_run import config_ecapa_tdnn_disent_raw_grad as config
 
 
 if 'lrf' in config.EXPERIMENT_DETAILS.keys():

@@ -18,8 +18,8 @@ EXPERIMENT_DETAILS = {'FEATURE_EXP': 'raw',
                       'CROP': True,
                       'OVERSAMPLE': False,
                       'SPLIT_BY_GENDER': False,  # Only for use in test mode
-                      'FEATURE_DIMENSIONS': 61440,
-                      'FREQ_BINS': 1,
+                      'FEATURE_DIMENSIONS': 61440,  #input segment length in number of raw audio samples
+                      'FREQ_BINS': 1,  #dimension of raw audio, set to 1
                       'BATCH_SIZE': 20,
                       'SNV': True,
                       'LEARNING_RATE': 5e-3,
@@ -27,9 +27,9 @@ EXPERIMENT_DETAILS = {'FEATURE_EXP': 'raw',
                       'TOTAL_EPOCHS': 100,
                       'TOTAL_ITERATIONS': 3280,
                       'ITERATION_EPOCH': 1,
-                      'LEARN_RATE_FACTOR': 2,
-                      'WEIGHT_DECAY':0,
-                      'LOSS_ALPHA': 4e-5,
+                      'LEARN_RATE_FACTOR': 2, #decrease learning rate by a factor of 0.9 every "LEARN_RATE_FACTOR" epochs
+                      'WEIGHT_DECAY':0, #L2 regularization strength
+                      'LOSS_ALPHA': 4e-5, #speaker loss weighting factor for feature processing layer --> lambda1 in paper
                       'EXP_RUNTHROUGH': 5}
 # Determine the level of crop, min file found in training set or maximum file
 # per set (ND / D) or (FND, MND, FD, MD)
@@ -38,9 +38,9 @@ MIN_CROP = True
 ANALYSIS_MODE = 'epoch'
 
 #grad dist config
-beta = 0.2 
+beta = 0.2 # ratio between lambda1 (Feature extraction module loss scalar) and lambda2: lambda2 = beta * lambda1
 
-EXPERIMENT_BRIEF = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_grad_disent_cnn_lstm'
+EXPERIMENT_BRIEF = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_grad_disent'
                                 + '_feat_'+EXPERIMENT_DETAILS["FEATURE_EXP"]
                                 + '_dim_'+str(EXPERIMENT_DETAILS["FEATURE_DIMENSIONS"])
                                 + '_batch_'+str(EXPERIMENT_DETAILS['BATCH_SIZE'])
@@ -49,7 +49,7 @@ EXPERIMENT_BRIEF = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_grad_disent_cnn
                                 + '_lrf_'+str(EXPERIMENT_DETAILS['LEARN_RATE_FACTOR'])
                                 + '_alpha_'+str(EXPERIMENT_DETAILS['LOSS_ALPHA']))
 
-EXPERIMENT_DETAILS['SUB_DIR'] = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_grad_disent_cnn_lstm'
+EXPERIMENT_DETAILS['SUB_DIR'] = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_grad'
                                 + '_feat_'+EXPERIMENT_DETAILS["FEATURE_EXP"]
                                 + '_dim_'+str(EXPERIMENT_DETAILS["FEATURE_DIMENSIONS"])
                                 + '_batch_'+str(EXPERIMENT_DETAILS['BATCH_SIZE'])
@@ -59,8 +59,7 @@ EXPERIMENT_DETAILS['SUB_DIR'] = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_gr
                                 + '_alpha_'+str(EXPERIMENT_DETAILS['LOSS_ALPHA'])
                                 + '_debug')
 
-EXPERIMENT_DETAILS['SUB_DIR'] = '/home/vijaysumaravi/Documents/code/vijay_depression_2020/model_arch/Non-uniform_Speech_Disentanglement/IS2023/raw_cnn_lstm/NUSD'
-
+#EXPERIMENT_DETAILS['SUB_DIR'] = '/home/vijaysumaravi/Documents/code/vijay_depression_2020/model_arch/Non-uniform_Speech_Disentanglement/IS2023/raw_ecapa_tdnn/NUSD'
 
 # EXPERIMENT_DETAILS['SUB_DIR'] = 'ecapa_tdnn_large'
 # How to calculate the weights: 'macro' uses the number of individual
