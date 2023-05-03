@@ -2,7 +2,7 @@
 
 ## **Credit**
 
-This repository relates to our work in the Inetspeech 2023 paper, "Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals". The framework is based on https://github.com/adbailey1/DepAudioNet_reproduction
+This repository relates to our work in the Interspeech 2023 paper, "Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals". The framework is based on https://github.com/adbailey1/DepAudioNet_reproduction
 
 **Prerequisites**
 
