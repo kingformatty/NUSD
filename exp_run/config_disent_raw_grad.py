@@ -59,7 +59,7 @@ EXPERIMENT_DETAILS['SUB_DIR'] = ('jinhan/grad_alpha/beta_'+str(beta)+'/jinhan_gr
                                 + '_alpha_'+str(EXPERIMENT_DETAILS['LOSS_ALPHA'])
                                 + '_debug')
 
-#EXPERIMENT_DETAILS['SUB_DIR'] = '/home/vijaysumaravi/Documents/code/vijay_depression_2020/model_arch/Non-uniform_Speech_Disentanglement/IS2023/raw_ecapa_tdnn/NUSD'
+#EXPERIMENT_DETAILS['SUB_DIR'] = '<Folder Directory>/IS2023/raw_ecapa_tdnn/NUSD'
 
 # EXPERIMENT_DETAILS['SUB_DIR'] = 'ecapa_tdnn_large'
 # How to calculate the weights: 'macro' uses the number of individual
