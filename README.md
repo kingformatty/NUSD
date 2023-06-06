@@ -68,23 +68,23 @@ Once downloaded, change `EXPERIMENT_DETAILS['SUB_DIR']` into the experiment dire
 
 If you find this repo useful in your work, please cite the following  - 
 
-@misc{wang2023nonuniform,
+`@misc{wang2023nonuniform,
       title={Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals}, 
       author={Jinhan Wang and Vijay Ravi and Abeer Alwan},
       year={2023},
       eprint={2306.01861},
       archivePrefix={arXiv},
       primaryClass={eess.AS}
-}
+}`
 
-@inproceedings{ravi22_interspeech,
+`@inproceedings{ravi22_interspeech,
   author={Vijay Ravi and Jinhan Wang and Jonathan Flint and Abeer Alwan},
   title={{A Step Towards Preserving Speakers’ Identity While Detecting Depression Via Speaker Disentanglement}},
   year=2022,
   booktitle={Proc. Interspeech 2022},
   pages={3338--3342},
   doi={10.21437/Interspeech.2022-10798}
-}
+}`
 
 
 
