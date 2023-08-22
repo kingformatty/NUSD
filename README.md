@@ -1,4 +1,5 @@
 # Non-uniform Speaker Disentanglement for Depression Detection From Raw Speech Signals
+![Alt text](relative%20https://github.com/kingformatty/NUSD/blob/main/NUSD%20IS2023%20Poster.pdf?raw=true "Title")
 
 ## **Credit**
 
