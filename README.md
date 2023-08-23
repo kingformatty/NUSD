@@ -6,7 +6,7 @@
 
 This repository relates to our work in the Interspeech 2023 paper, "Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals". 
 
-Camera-ready preprint - https://arxiv.org/abs/2306.01861
+Full paper - https://www.isca-speech.org/archive/interspeech_2023/wang23pa_interspeech.html
 
 The framework is based on https://github.com/adbailey1/DepAudioNet_reproduction
 
@@ -70,13 +70,13 @@ Once downloaded, change `EXPERIMENT_DETAILS['SUB_DIR']` into the experiment dire
 
 If you find this repo useful in your work, please cite the following  - 
 
-`@misc{wang2023nonuniform,
-      title={Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals}, 
-      author={Jinhan Wang and Vijay Ravi and Abeer Alwan},
-      year={2023},
-      eprint={2306.01861},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+`@inproceedings{wang23pa_interspeech,
+  author={Jinhan Wang and Vijay Ravi and Abeer Alwan},
+  title={{Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals}},
+  year=2023,
+  booktitle={Proc. INTERSPEECH 2023},
+  pages={2343--2347},
+  doi={10.21437/Interspeech.2023-2101}
 }`
 
 `@inproceedings{ravi22_interspeech,
