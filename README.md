@@ -61,7 +61,7 @@ For example: To run a training experiment without bash, using a validation
  `python3 main_disent_fscore_grad.py test --validate --cuda --prediction_metric=1 --threshold=total`
  
 ## Pre-trained Models
-The best models without disentanglement, Uniform Speaker Disentanglement (USD) and Non-uniform Speaker Disentanglement (NUSD) are shared. Please download from the Google Drive https://drive.google.com/file/d/1ILgYpktXEZq2f_1IefBy_3UYy7TdWxFg/view?usp=share_link
+The best models without disentanglement, Uniform Speaker Disentanglement (USD) and Non-uniform Speaker Disentanglement (NUSD) are shared. Please download from the Google Drive https://drive.google.com/drive/folders/1F_1R8MdN-jYx4JQcRo8zzd-jB3_wJ5fX?usp=drive_link
 
 Once downloaded, change `EXPERIMENT_DETAILS['SUB_DIR']` into the experiment directory and run test script.
 
